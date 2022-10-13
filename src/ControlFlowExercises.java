@@ -79,13 +79,13 @@ public class ControlFlowExercises {
         while(userResponse.equals("y")) {
             System.out.println("Enter an integer:");
             int number = scan.nextInt();
-            System.out.println("Number" + " " + "|" + " Squared " + " " + "|" + " Cubed");
-            System.out.println("-------" + "|" + "----------" + "|" + "-------");
+            System.out.println("Number | Squared | Cubed");
+            System.out.println("------ | ------- | -----");
 
             for (int n = 1; n <= number; n++) {
                 int squared = (int) (Math.pow(n, 2));
                 int cubed = (int) (Math.pow(n, 3));
-                System.out.println(n + "      |" + squared + "         |" + cubed);
+                System.out.printf("%-7d| %-8d| %-5d%n", n, squared, cubed);
             }
             System.out.println("Do you want to continue?(y/n)");
             userResponse = scan.next();
