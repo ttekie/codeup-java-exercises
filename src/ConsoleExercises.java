@@ -62,15 +62,15 @@ public class ConsoleExercises {
         double volume = lengthOfClassRoom * widthOfClassRoom * heightOfClassRoom;
         System.out.printf("The volume of the the classroom is, %.2f%n", volume);
 
-//        1. Prompt the user to enter a favorite quote
+        // 1. Prompt the user to enter a favorite quote
         System.out.println("Enter your favorite quote");
-//        - output the quote
+        // output the quote
         String favoriteQuote = scanner.nextLine();
         System.out.printf("Here is the quote you entered, %s!%n", favoriteQuote);
-//        - ask them to enter how many words are in the quote
+        // ask them to enter how many words are in the quote
         System.out.println("How many words are in the quote?");
         int numberOfWords = scanner.nextInt();
-//        - output the number they entered
+        // output the number they entered
         System.out.printf("The number of words on this quote is %d%n", numberOfWords);
 
 //        - output if the number they entered indeed matched the number of words
