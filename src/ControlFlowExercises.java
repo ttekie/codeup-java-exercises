@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-         // a. while loop
+        // a. while loop
         int i = 5;
         while (i <= 15) {
             System.out.println(i);
             i++;
         }
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("/**********************/");
         // b. do while
         int j = 0;
@@ -17,7 +17,7 @@ public class ControlFlowExercises {
             j += 2;
         } while(j <= 100);
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
         int k = 100;
         do {
@@ -25,28 +25,37 @@ public class ControlFlowExercises {
             k -= 5;
         } while(k > 5);
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
-        long q = 2;
+        long q = 2L;
         do {
             System.out.println(q);
             q *= q;
         } while(q < 1000000);
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
-         // refactor the last two do while loops
+          //refactor the last two do while loops
+        for(int ii = 5; ii <= 15; ii++) {
+            System.out.println(ii);
+        }
+        // this line of code is added to separate each problem output
+        System.out.println("**********************");
+        for(int jj = 0; jj <= 100; jj+= 2) {
+            System.out.println(jj);
+        }
+        // this line of code is added to separate each problem output
+        System.out.println("**********************");
         for (int kk = 100; kk > 5; kk -= 5) {
             System.out.println(kk);
         }
-
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
         for(long qq = 2; qq < 1000000; qq *= qq) {
             System.out.println(qq);
         }
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
          // 2. Fizzbuzz
         for (int d = 1; d <= 100; d++) {
@@ -61,7 +70,7 @@ public class ControlFlowExercises {
             }
         }
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
 
         // 3. Display a table of powers
@@ -82,7 +91,7 @@ public class ControlFlowExercises {
             userResponse = scan.next();
         }
 
-        // this code is added to separate each problem output
+        // this line of code is added to separate each problem output
         System.out.println("**********************");
         // 4. Convert given number grades into letter grades.
         String userInput = "y";
