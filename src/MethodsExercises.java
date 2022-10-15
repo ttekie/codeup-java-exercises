@@ -10,12 +10,13 @@ public class MethodsExercises {
 
         int validateUserInput = getInteger(1, 20);
         System.out.println("The number you entered is: " + validateUserInput);
+
+
     }
     // 1. Basic Arithmetic
     public static int addition(int num1, int num2) {
         return num1 + num2;
     }
-
     public static int subtraction(int num1, int num2) {
         return num2 - num1;
     }
