@@ -98,13 +98,13 @@ public class ControlFlowExercises {
         while (userInput.equals("y")) {
             System.out.println("Enter your Grade:");
             int grade = scan.nextInt();
-            if (grade >= 88 && grade <= 100) {
+            if (grade > 88 && grade <= 100) {
                 System.out.println("Excellent: Grade A");
-            } else if(grade >= 80 && grade <= 87) {
+            } else if(grade > 80 && grade <= 87) {
                 System.out.println("Very Good: Grade B");
-            } else if(grade >= 67 && grade <= 79) {
+            } else if(grade > 67 && grade <= 79) {
                 System.out.println("Good: Grade C");
-            } else if(grade >= 60 && grade <= 66) {
+            } else if(grade > 60 && grade <= 66) {
                 System.out.println("Satisfactory: Grade D");
             } else {
                 System.out.println("Failed!: Grade F");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class ConsoleIOLecture {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         String cohort = "Weywot";
         String timeOfDay = "morning";
         byte week = 10;
