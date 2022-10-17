@@ -5,7 +5,7 @@ public class Bob {
         Scanner scan = new Scanner(System.in);
         String userQuestion = "";
         System.out.println("Ask Bob a question");
-        while(userQuestion.equals("")) {
+        while (userQuestion.equals("")) {
             userQuestion = scan.nextLine();
             if (userQuestion.endsWith("?")) {
                 System.out.println("Sure");
