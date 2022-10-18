@@ -12,6 +12,7 @@ public class MethodsExercises {
         System.out.println("The number you entered is: " + userInput);
 
         factorial(1, 10);
+        rollDice();
     }
     // 1. Basic Arithmetic
     public static int addition(int num1, int num2) {
@@ -23,7 +24,7 @@ public class MethodsExercises {
     public static int multiplication(int num1, int num2) {
         return num1 * num2;
     }
-    public static int division(int num1, int num2) {
+    public static double division(double num1, double num2) {
         return num2 / num1;
     }
     public static int reminder(int num1, int num2) {
@@ -33,9 +34,9 @@ public class MethodsExercises {
     public static int getInteger(int min, int max) {
         while (true) {
             Scanner scan = new Scanner(System.in);
-            System.out.println("Enter a number between 1 and 20:");
+            System.out.printf("Enter a number between %d and %d:%n", min, max);
             int userInput = scan.nextInt();
-            if (userInput > min && userInput < max) {
+            if (userInput >= min && userInput <= max) {
                 return userInput;
             }
         }
@@ -61,5 +62,26 @@ public class MethodsExercises {
         }
     }
 
+//    Create an application that simulates dice rolling.
+    public static int generateRandomNumber(int max) {
+        return (int) Math.ceil(Math.random() * max);
+    }
+    public static void rollDice() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many sides do the dice have?");
+        byte numberOfSides = scan.nextByte();
+        System.out.printf("Your dice have %d sides.%n", numberOfSides);
+        System.out.println("Do you want to roll the dice? y/n");
+        String userChoice = scan.next();
+        while(userChoice.equals("y")) {
+            System.out.println("You rolled the dice!");
+            System.out.printf("You rolled %d and %d%n",
+                    generateRandomNumber(numberOfSides),
+                    generateRandomNumber(numberOfSides));
+            System.out.println("Do you want the roll the dice again?");
+            userChoice = scan.next();
+        }
+
+    }
 
 }
