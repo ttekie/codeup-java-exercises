@@ -47,7 +47,7 @@ public class MethodsExercises {
         String choice = "y";
         long factorial = 1;
         while (choice.equals("y")) {
-            System.out.println("Enter an integer between " + min + " and " + max);
+            System.out.printf("Enter an integer between %d and %d:%n", min, max);
             int userInput = reader.nextInt();
             if (userInput >= min && userInput < max) {
                 for (int i = 1; i <= userInput; i++) {

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Warmup {
@@ -65,9 +66,17 @@ public class Warmup {
 //
 
 
-        String letters = "Tesfalem";
+//        String letters = "Tesfalem";
+//        System.out.println(letters.charAt(0) == 'T');
 
-        System.out.println(letters.charAt(0) == 'T');
+//        String[] languages = new String[9];
+        String[] languages = {"HTML", "css", "javascript", "java", "React.js"};
+        System.out.println(Arrays.toString(languages));
+        for(String language : languages) {
+//            System.out.println(language);
+        }
+
+
 
     }
 }
