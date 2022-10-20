@@ -20,6 +20,10 @@ public class Input {
         System.out.println("Enter your input:");
         return scanner.nextLine();
     }
+    public String getString(String prompt) {
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
     // instance method
     public boolean yesNo() {
         System.out.println("Enter yes or no");
@@ -29,6 +33,7 @@ public class Input {
 
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
+        scanner.nextLine();
         String userInput = scanner.nextLine();
         return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }

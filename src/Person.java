@@ -15,6 +15,9 @@ public class Person {
     //TODO: print a message to the console using the person's name
         System.out.printf("My name is %s%n", name);
     }
+    public String toString() {
+        return name;
+    }
     // when we create a custom constructor it overwrite
     // the implicit constructor
     public Person (String name) {
