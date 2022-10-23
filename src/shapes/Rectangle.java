@@ -1,4 +1,4 @@
-//package shapes;
+package shapes;
 //
 //public class Rectangle {
 //    protected int width;
@@ -45,23 +45,28 @@ import shapes.Measurable;
 import shapes.Quadrilateral;
 
 public class Rectangle extends Quadrilateral implements Measurable {
+
+    public Rectangle(int length, int width) {
+        super(length, width);
+    }
+
     @Override
     public double getPerimeter() {
-        return 0;
+        return 2 * (length + width);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
     @Override
-    public int setLength() {
-        return 0;
+    public void setLength(int length) {
+        this.length = length;
     }
 
     @Override
-    public int setWidth() {
-        return 0;
+    public void setWidth(int width) {
+        this.width = width;
     }
 }
