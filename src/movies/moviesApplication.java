@@ -2,22 +2,21 @@ package movies;
 import util.Input;
 
 public class moviesApplication {
-
     public static void getAllMoviesFromCategory(String category, Movie[] movies){
         for (Movie movie : movies){
             String name = movie.getName();
-            if(category.equals(movie.getCategory())){
+            if (category.equals(movie.getCategory())){
                 System.out.printf("%s -- %s%n", name, category);
             }
         }
     }
-    public static Movie[] addMovie(Movie newMovie, Movie[] movies){
+    public static Movie[] addMovie(Movie newMovie, Movie[] movies) {
         Movie[] newMovieArray;
         newMovieArray = new Movie[movies.length + 1];
-        for (int i = 0; i < movies.length - 1; i++){
+        for (int i = 0; i < movies.length - 1; i++) {
             newMovieArray[i] = movies[i];
         }
-        newMovieArray[newMovieArray.length-1] = newMovie;
+        newMovieArray[newMovieArray.length - 1] = newMovie;
 
         return newMovieArray;
     }
@@ -26,7 +25,8 @@ public class moviesApplication {
         Input input = new Input();
         Movie[] movies = MoviesArray.findAll();
         String userChoice = "-1";
-        while (!userChoice.equals("0")){
+        // while loop will keep iterating until the userChoice is equals to 0
+        while (!userChoice.equals("0")) {
             System.out.println("What would you like to do?");
             System.out.println("0 - exit");
             System.out.println("1 - view all movies");
@@ -37,7 +37,10 @@ public class moviesApplication {
             System.out.println("6 - add a movie to the list");
             userChoice = input.getString("Enter your choice:");
 
-            switch(userChoice){
+            /* the switch statement will match the value of
+             each case to the conditional expression and execute the code
+            within the case that matches the expression */
+            switch(userChoice) {
                 case "0":
                     break;
                 case "1":
@@ -64,13 +67,12 @@ public class moviesApplication {
                     String category = input.getString("Enter the category: ");
                     Movie newMovie = new Movie(title, category);
                     movies = addMovie(newMovie, movies);
-
+                    break;
                 default:
                     System.out.println("Be smarter. Follow Directions.");
-            }
-        }
+            } // switch statement end here
 
+        } // while loop end here
 
-
-    }
+    } // main method end here
 }

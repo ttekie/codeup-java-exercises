@@ -1,5 +1,5 @@
 package shapes;
-//
+
 //public class Rectangle {
 //    protected int width;
 //
@@ -40,9 +40,6 @@ package shapes;
 //    }
 //
 //}
-
-import shapes.Measurable;
-import shapes.Quadrilateral;
 
 public class Rectangle extends Quadrilateral implements Measurable {
 

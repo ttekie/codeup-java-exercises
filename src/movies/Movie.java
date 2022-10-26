@@ -4,7 +4,7 @@ public class Movie {
     private String name;
     private String category;
 
-    // constructor method
+    // constructor method initialize the instance variables
     public Movie(String name, String category) {
         this.name = name;
         this.category = category;

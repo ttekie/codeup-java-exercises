@@ -1,4 +1,5 @@
-package shapes;//package shapes;
+package shapes;
+
 //// square inherit Rectangle
 //public class Square extends Rectangle{
 //    private int side;
@@ -16,7 +17,7 @@ package shapes;//package shapes;
 //    }
 //}
 
-public class Square extends Quadrilateral implements Measurable{
+public class Square extends Quadrilateral {
     public Square(int length, int width) {
         super(length, width);
     }
