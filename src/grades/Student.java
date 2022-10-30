@@ -29,5 +29,4 @@ public class Student {
         }
         return gradeAccumulator / this.grades.size();
     }
-
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class GradesApplication {
     public static void main(String[] args) {
-        // hashmap gets a key value pair for a student username and
+        // hashmap gets a key value pair for a student GitHub username and
         // student object that contains name and grades
         HashMap<String, Student> students = new HashMap<>();
 
@@ -58,7 +58,7 @@ public class GradesApplication {
             String userInput = reader.nextLine();
 
             // using if...else control statement, we check if userInput matches and if it does
-            // it will output the student name, username and average and if does not it will
+            // it will output the student name, username and average and if it does not it will
             // output the mismatched username
             if (students.containsKey(userInput)){
                 System.out.printf("Name: %s - Github username: %s%n", students.get(userInput).getName(), userInput);
