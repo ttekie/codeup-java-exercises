@@ -1,7 +1,7 @@
 package movies;
 import util.Input;
 
-public class moviesApplication {
+public class MoviesApplication {
     public static void getAllMoviesFromCategory(String category, Movie[] movies){
         for (Movie movie : movies){
             String name = movie.getName();

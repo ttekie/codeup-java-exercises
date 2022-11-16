@@ -73,14 +73,22 @@ class PetDog extends Pet implements Companion {
     public String snuggle() {
         return getName() + " wants to snuggle";
     }
+    public static void allSnuggle(ArrayList<PetDog> petDogs) {
+        for(PetDog petDog : petDogs) {
+            System.out.println(petDog.snuggle());
+        }
+    }
 }
 interface Companion  {
     public String snuggle();
 }
 class PetDogTest {
     public static void main(String[] args) {
-        PetDog dog = new PetDog("cooper", "bulldog", true);
+        PetDog dog = new PetDog("Milo", "bulldog", true);
         System.out.println(dog.snuggle());
+
+        ArrayList<PetDog> dogs = new ArrayList<>(List.of(new PetDog("cooper", "Bulldog", true), new PetDog("Charlie", "Siberian Husky", false),new PetDog("Luna", "Poodle", true)));
+        PetDog.allSnuggle(dogs);
     }
 }
 // 1. Create a class called Practice with a main method.
